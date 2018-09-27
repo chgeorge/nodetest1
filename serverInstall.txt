@@ -1,0 +1,8 @@
+To install on DO server:
+1. git clone app .git to /opt/  
+2. screen -X appScreen
+3. sudo NODE_ENV=production PORT=80 npm start
+4. ctrl+A, ctrl+D
+5. screen -X mongoScreen
+6. sudo mongod --dbpath /opt/nodetest1/data
+7. ctrl+A, ctrl+D
