@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Christian George' });
+  res.render('index', { title: 'Home Page' });
 });
 
 /* GET Hello World page */
@@ -17,7 +17,8 @@ router.get('/userlist', function(req,res) {
 	var collection = db.get('usercollection');
 	collection.find({},{},function(e,docs){
 		res.render('userlist', {
-			"userlist" : docs
+			"userlist" : docs,
+			title: "User List"
 		});
 	});
 });
