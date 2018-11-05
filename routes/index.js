@@ -28,7 +28,8 @@ router.get('/newuser', function(req, res) {
 	res.render('newuser', { title: 'Add New User' });
 });
 
-/* POST to Add User Service */
+/*
+// POST to Add User Service
 router.post('/adduser', function(req, res) {
 
 	// Set our inter DB variable
@@ -56,5 +57,5 @@ router.post('/adduser', function(req, res) {
 		}
 	});
 });
-
+*/
 module.exports = router;
