@@ -49,15 +49,22 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   padding: 10px;
+
 }
 
 .specialty {
 	text-align: center;
+  font-style: italic;
 }
 
 .footer {
   padding-top: 30px;
   text-align: center;
+}
+
+.imagesets {
+  width:100%;
+  height:auto;
 }
 
 
