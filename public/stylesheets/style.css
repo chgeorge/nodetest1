@@ -14,6 +14,7 @@ html {
 
 main {
   flex-grow: 1;
+  background-color: #d8d2c3;
 }
 
 header, main, footer {
@@ -36,6 +37,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  background-color: #d8d2c3;
 }
 
 
@@ -51,7 +53,40 @@ body {
   height: 80px;
   background-color: #447f43;
   color: #FFFFFF;
-  margin-bottom: 20px;
+}
+
+.nav{
+  font-size: 13px;
+  margin-left: 0px;
+  background-color: #000000;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #232323;
+}
+
+.item {
+  float: left;
+}
+
+.item a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.item a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #fcbe2d;
 }
 
 
@@ -63,10 +98,12 @@ body {
   margin: 0 auto;
   padding: 10px;
   flex-grow: 1;
+  background-color: #d8d2c3;
 }
 
 .content {
   /*width: auto;*/
+  padding: 20px 0px 20px 0px;
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
@@ -98,7 +135,6 @@ body {
 .footer {
   font-size: 0.85em;
   height:50px;
-  margin-top: 20px;
   text-align: center;
   background-color: #447f43;
   color: #FFFFFF;
@@ -109,4 +145,14 @@ body {
   align-items: center;
 
   flex-shrink: 0;
+}
+
+/* Error
+   ========================================================================== */
+
+.er-mess {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-align: center;
 }

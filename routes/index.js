@@ -3,15 +3,26 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home Page' });
+  res.render('index', { title: 'Home' });
 });
 
-/* GET Hello World page */
+/* GET projects page */
+router.get('/projects', function(req, res) {
+	res.render('projects', { title: 'Projects' });
+});
+
+/* GET Contact page */
+router.get('/contact', function(req, res) {
+	res.render('contact', { title: 'Contact' });
+});
+
+/* GET Hello World page
 router.get('/helloworld', function(req, res) {
 	res.render('helloworld', { title: 'Hello, World!' });
 });
+*/
 
-/* GET Userlist page. */
+/* GET Userlist page.
 router.get('/userlist', function(req,res) {
 	var db = req.db;
 	var collection = db.get('usercollection');
@@ -22,11 +33,13 @@ router.get('/userlist', function(req,res) {
 		});
 	});
 });
+*/
 
-/* GET New User page. */
+/* GET New User page.
 router.get('/newuser', function(req, res) {
 	res.render('newuser', { title: 'Add New User' });
 });
+*/
 
 /*
 // POST to Add User Service

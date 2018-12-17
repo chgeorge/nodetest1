@@ -1,6 +1,19 @@
 extends layout
 
-block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+block header
+	header.header
+		h1 CG - Site Coming Soon
+	div.nav
+		ul.menu
+			li.item
+				<a href='/'>Home</a>
+			li.item
+				<a href='/projects'>Projects</a>
+			li.item
+				<a href='/contact'>Contact</a>	
+
+block body
+	p.er-mess You found an error :'(
+	h1= message
+	h2= error.status
+	pre #{error.stack}

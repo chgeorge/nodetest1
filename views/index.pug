@@ -2,7 +2,17 @@ extends layout
 
 block header
 	header.header
-		h1 Site Coming Soon!
+		h1 CG - Site Coming Soon
+	div.nav
+		ul.menu
+			li.item
+				<a href='/' class="active">Home</a>
+			li.item
+				<a href='/projects'>Projects</a>
+			li.item
+				<a href='/contact'>Contact</a>	
+
+
 
 block body
 	div.container
@@ -21,6 +31,4 @@ block body
 				img.imagesets(src='/images/vision.jpg' alt='software_img')
 
 
-block footer	
-	div.footer
-		p Feel free to send me an email at <a href=mailto:contact@christian-george.com>contact@christian-george.com</a>!
+		
