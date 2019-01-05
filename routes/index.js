@@ -7,8 +7,13 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET projects page */
-router.get('/projects', function(req, res) {
-	res.render('projects', { title: 'Projects' });
+router.get('/about', function(req, res) {
+	res.render('about', { title: 'About' });
+});
+
+/* GET projects page */
+router.get('/services', function(req, res) {
+	res.render('services', { title: 'Services' });
 });
 
 /* GET Contact page */

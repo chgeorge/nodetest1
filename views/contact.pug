@@ -6,11 +6,13 @@ block header
 	div.nav
 		ul.menu
 			li.item
-				<a href='/'>Home</a>
+				<a href='/'>HOME</a>
 			li.item
-				<a href='/projects'>Projects</a>
+				<a href='/about'>ABOUT</a>	
 			li.item
-				<a href='/contact' class="active">Contact</a>	
+				<a href='/services'>SERVICES</a>
+			li.item
+				<a href='/contact'  class="active">CONTACT</a>	
 
 
 
@@ -20,24 +22,21 @@ block body
 			div.form-area
 				<form action="mailto:contact@christian-george.com" method="post" enctype="text/plain">
 
-					<label for="fname">First Name</label>
-					<input type="text" id="fname" name="firstname">
-
-					<label for="lname">Last Name</label>
-					<input type="text" id="lname" name="lastname">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name">
 
 					<label for="email">Email</label>
 					<input type="text" id="eml" name="email">
 
-					<label for="Reason">Reason</label>
-					<select id="reason" name="reason">
+					<label for="subject">Subject</label>
+					<select id="subject" name="subject">
 						<option value="general">General</option>
 						<option value="inquiry">Inquiry</option>
 						<option value="other">Other</option>
 					</select>
 
-					<label for="subject">Subject</label>
-					<textarea id="subject" name="subject" style="height:200px"></textarea>
+					<label for="message">Message</label>
+					<textarea id="message" name="message" style="height:250px"></textarea>
 
 					<input type="submit" value="Submit">
 

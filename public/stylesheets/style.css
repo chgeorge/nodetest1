@@ -2,6 +2,10 @@ a {
   color: #FFFFFF;
 }
 
+li {
+
+}
+
 html {
   box-sizing: border-box;
 }
@@ -14,7 +18,7 @@ html {
 
 main {
   flex-grow: 1;
-  background-color: #d8d2c3;
+  background-color: #ebe8e1;
 }
 
 header, main, footer {
@@ -23,7 +27,6 @@ header, main, footer {
 
 html, body {
     width: 100%;
-    height: 100%;
 }
 
 /* FONTS
@@ -37,7 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  background-color: #d8d2c3;
+  background-color: #ebe8e1;
 }
 
 
@@ -50,7 +53,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 60px;
   background-color: #447f43;
   color: #FFFFFF;
 }
@@ -58,6 +61,10 @@ body {
 .nav{
   font-size: 13px;
   margin-left: 0px;
+
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 .menu {
@@ -97,13 +104,20 @@ body {
   margin: 0 auto;
   padding: 10px;
   flex-grow: 1;
-  background-color: #d8d2c3;
+  background-color: #ebe8e1;
 }
 
 .content {
   /*width: auto;*/
-  padding: 20px 0px 20px 0px;
+  padding: 50px 0px 50px 0px;
   max-width: 1000px;
+  margin: 0 auto;
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+}
+
+.post {
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -134,13 +148,14 @@ body {
 /* Footer
    ========================================================================== */
 
-.footer {
-  font-size: 0.85em;
+footer {
+  font-size: 0.9em;
   height:50px;
   text-align: center;
   background-color: #447f43;
   color: #FFFFFF;
   padding-top: 5px;
+  line-height: 1.2em;
 
   display: flex;
   justify-content: center; /* align horizontal */
@@ -163,14 +178,15 @@ body {
    ========================================================================== */
 
 .form-area {
-  max-width: 750px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
-  padding: 12px; /* Some padding */  
+  font-size: 1em;
+  padding: 12px; /* Some padding */
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
