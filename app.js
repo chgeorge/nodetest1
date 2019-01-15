@@ -14,6 +14,8 @@ var indexRouter = require('./routes/index');
 
 var app = express();
 
+app.listen(8080, 'localhost');
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');

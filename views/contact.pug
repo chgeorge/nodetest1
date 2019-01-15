@@ -1,8 +1,6 @@
 extends layout
 
-block header
-	header.header
-		h1 Site Coming Soon
+block navbar
 	div.nav
 		ul.menu
 			li.item
@@ -16,9 +14,14 @@ block header
 
 
 
-block body
+block section
 	div.container
 		div.content
+			div.post
+				p.form-post
+					| Please feel free to contact me via the form below or directly at <a href=mailto:contact@christian-george.com>contact@christian-george.com</a> and I'll get back to you as soon as possible.
+					| <br />
+					| <br />
 			div.form-area
 				<form action="mailto:contact@christian-george.com" method="post" enctype="text/plain">
 
