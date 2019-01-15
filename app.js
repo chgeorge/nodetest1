@@ -14,7 +14,9 @@ var indexRouter = require('./routes/index');
 
 var app = express();
 
-app.listen(8080, 'localhost');
+var server = app.listen(8080, function() {
+    console.log('Ready on port %d', server.address().port);
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
